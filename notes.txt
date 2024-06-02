@@ -3,3 +3,7 @@ How to connect remix to github :
 - Create repository on github
 - Open DGIT menu on remix, do commit
 - Add remote on DGIT, then push.
+
+Run Smart contract
+- Compile in Solidity compiler
+- Deploy

@@ -6,7 +6,16 @@ pragma solidity ^0.8.25;
 // Contract (similar to class)
 contract SimpleStorage {
     // Integer consist of int and uint(non-negative number)
-    uint256 public num;
+    uint256 num;
+
+    // Use struct and array to store several data
+    struct People {
+        string name;
+        uint256 num;
+    }
+    // People public person = People({name: "Andika", num: 22});
+    People[] public people;
+
 
     // Transaction Function to store number based on given number
     // Doing more things, will add gas need
@@ -29,4 +38,10 @@ contract SimpleStorage {
     function addLogic() public pure  returns(uint256) {
         return (1+1);
     }
+
+
+    // Function for add person to People Array
+    function addPerson(string memory _name, uint256 _num) public {
+        people.push(People(_name, _num));
+    } 
 }

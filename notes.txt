@@ -1,0 +1,5 @@
+How to connect remix to github :
+- On remix credential, fill github data
+- Create repository on github
+- Open DGIT menu on remix, do commit
+- Add remote on DGIT, then push.

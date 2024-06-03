@@ -16,6 +16,8 @@ contract SimpleStorage {
     // People public person = People({name: "Andika", num: 22});
     People[] public people;
 
+    // Map the name of people to it's number
+    mapping(string => uint256) public nameToNum;
 
     // Transaction Function to store number based on given number
     // Doing more things, will add gas need
@@ -41,7 +43,10 @@ contract SimpleStorage {
 
 
     // Function for add person to People Array
+    // Memory type is used for array (string is included) and struct paramater
+    // Can use calldata type (data can't be modified)
     function addPerson(string memory _name, uint256 _num) public {
         people.push(People(_name, _num));
+        nameToNum[_name] = _num;
     } 
 }

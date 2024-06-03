@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.25+commit.b61c2a91"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -34,6 +34,25 @@
 				"name": "addPerson",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToNum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -115,11 +134,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0xf3d7370e015719622a464d3233bc142bd584608a45911f4b1aeffb97cbf72e92",
+			"keccak256": "0xc7a0fac488f9feac7184c3565933aa74566292e4de2ec941ecfb9a85a007b897",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7166a2cd4c37ff0f537b5c82c261aa3ee94a1b81cbaa6fedf383f7a7ec448c0a",
-				"dweb:/ipfs/QmZWw7Vv4rGTwezynKmvnLo2ypyU6oC7WGQCrJ8gnwaQMG"
+				"bzz-raw://c3de4a45ff9ed65a117e6cefb43940fa0dc4f6439497e94a651f61c85cd8f008",
+				"dweb:/ipfs/QmQyamDhr2sPkrgPVxcmYHKBYRwke8cQTBWersKioWkEfk"
 			]
 		}
 	},
